@@ -62,7 +62,10 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEV' in os.environ
 
-ALLOWED_HOSTS = ['localhost', 'rate-my-car-api.herokuapp.com']
+ALLOWED_HOSTS = [
+    '8000-georgeph0-ratemycarapi-106kent4iej.ws-eu107.gitpod.io', 
+    'https://rate-my-car-api-deed71afb45e.herokuapp.com/'
+]
 
 if 'CLIENT_ORIGIN' in os.environ:
     CORS_ALLOWED_ORIGINS = [
