@@ -63,8 +63,8 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = 'DEV' in os.environ
 
 ALLOWED_HOSTS = [
-    '8000-georgeph0-ratemycarapi-106kent4iej.ws-eu107.gitpod.io', 
-    'rate-my-car-api-deed71afb45e.herokuapp.com/'
+    'rate-my-car-api-deed71afb45e.herokuapp.com/',
+    '8000-georgeph0-ratemycarapi-106kent4iej.ws-eu107.gitpod.io'
 ]
 
 if 'CLIENT_ORIGIN' in os.environ:
