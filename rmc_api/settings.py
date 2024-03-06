@@ -63,7 +63,11 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEV' in os.environ
 
-ALLOWED_HOSTS = [os.environ.get('ALLOWED_HOST'), '8000-georgeph0-ratemycarapi-106kent4iej.ws-eu107.gitpod.io']
+ALLOWED_HOSTS = [
+    os.environ.get('ALLOWED_HOST'),
+    '8000-georgeph0-ratemycarapi-106kent4iej.ws-eu107.gitpod.io',
+    '8000-georgeph0-ratemycarapi-19psecv7ob9.ws-eu108.gitpod.io',
+    ]
 
 if 'CLIENT_ORIGIN' in os.environ:
     CORS_ALLOWED_ORIGINS = [
@@ -116,7 +120,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'allauth.account.middleware.AccountMiddleware'
+    #'allauth.account.middleware.AccountMiddleware'
 ]
 
 ROOT_URLCONF = 'rmc_api.urls'
